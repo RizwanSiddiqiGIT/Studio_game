@@ -1,8 +1,4 @@
+Player1Name = "larry"
+PLayer1Health = 60
 
-Greeting="Welcome!"
-
-for i in 1..3
-    puts Greeting.upcase
-end
-
-puts Time.now
+puts "#{Player1Name} has a health of #{PLayer1Health/9.0}"
