@@ -33,19 +33,24 @@ puts player1
 
 player2 = Player.new("larry", 60)
 puts player2
-
 player3 = Player.new("curly", 125)
 puts player3
+players = [player1, player2, player3]
+players.pop
+player4 = Player.new("Shemp", 90)
+players.push(player4)
+players.each do |player|
+    puts player
+  end
 
-player3.blam
-puts player3
+players.each do |player|
+    puts player.health
+end
 
-player3.woot 
-puts player3
+players.each do |player|
+    player.blam
+    player.woot
+    player.woot
+    puts player
+  end
 
-puts player1.health
-puts player2.health
-puts player3.health
-
-player2.name = "Lawrence"
-puts player2.name
